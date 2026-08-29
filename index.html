@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Yadav - Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Amit Yadav - Full-Stack Developer building responsive web experiences, AI-powered tools, and practical software products." />
+    <meta name="theme-color" content="#050A14" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "primary-fixed": "#F5B82E",
+              "on-tertiary": "#090B10",
+              "error-container": "rgba(255, 107, 107, 0.12)",
+              "surface-bright": "#0B1220",
+              "tertiary-fixed-dim": "#55DDE0",
+              "on-secondary-fixed": "#090B10",
+              "outline": "#AAB4C3",
+              "inverse-primary": "#FFD166",
+              "surface-container": "#0B1220",
+              "on-error": "#090B10",
+              "surface-container-high": "#0B1220",
+              "surface-variant": "#101827",
+              "primary-container": "#F5B82E",
+              "error": "#FF6B6B",
+              "surface-container-low": "#090B10",
+              "on-secondary-fixed-variant": "#090B10",
+              "on-tertiary-fixed-variant": "#090B10",
+              "inverse-on-surface": "#090B10",
+              "surface-dim": "#050A14",
+              "on-primary-fixed": "#090B10",
+              "on-secondary-container": "#090B10",
+              "on-tertiary-fixed": "#090B10",
+              "secondary-fixed": "#55DDE0",
+              "on-primary-fixed-variant": "#090B10",
+              "on-tertiary-container": "#090B10",
+              "on-primary": "#090B10",
+              "secondary": "#55DDE0",
+              "success": "#42E6A4",
+              "primary-fixed-dim": "#F5B82E",
+              "primary": "#F5B82E",
+              "on-primary-container": "#090B10",
+              "background": "#050A14",
+              "surface-tint": "#F5B82E",
+              "surface-container-highest": "#0B1220",
+              "on-error-container": "#FFD9D9",
+              "surface-container-lowest": "#050A14",
+              "tertiary-fixed": "#55DDE0",
+              "inverse-surface": "#F5F1E8",
+              "on-secondary": "#090B10",
+              "tertiary-container": "#55DDE0",
+              "on-background": "#F5F1E8",
+              "on-surface-variant": "#AAB4C3",
+              "outline-variant": "rgba(245, 184, 46, 0.22)",
+              "surface": "#090B10",
+              "on-surface": "#F5F1E8",
+              "tertiary": "#55DDE0",
+              "secondary-fixed-dim": "#55DDE0",
+              "secondary-container": "#55DDE0"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem",
+              "2xl": "1rem",
+              "3xl": "1.5rem"
+            },
+            "spacing": {
+              "margin-desktop": "80px",
+              "margin-mobile": "20px",
+              "stack-sm": "8px",
+              "stack-md": "16px",
+              "stack-lg": "32px",
+              "section-gap": "120px",
+              "gutter": "24px",
+              "grid-columns": "12"
+            },
+            "fontFamily": {
+              "display-xl-mobile": ["Space Grotesk", "sans-serif"],
+              "mono-code": ["JetBrains Mono", "monospace"],
+              "display-xl": ["Space Grotesk", "sans-serif"],
+              "body-lg": ["Inter", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+              "headline-lg": ["Space Grotesk", "sans-serif"],
+              "mono-label": ["JetBrains Mono", "monospace"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .glow-hover:hover {
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+      }
+      .text-glow {
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+      }
+      .glass-panel {
+        background: rgba(8, 15, 28, 0.82);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(245, 184, 46, 0.22);
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        backface-visibility: hidden;
+        will-change: opacity, transform;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 18px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      @media (max-width: 639px) {
+        .glass-panel {
+          backdrop-filter: blur(7px);
+          -webkit-backdrop-filter: blur(7px);
+        }
+        .fade-in-up {
+          animation-duration: 0.55s;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased selection:bg-secondary/30 selection:text-secondary relative">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
