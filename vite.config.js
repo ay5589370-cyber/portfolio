@@ -1,6 +1,5 @@
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import chatHandler from './api/chat.js';
 
 function addResponseHelpers(res) {
   res.status = function (statusCode) {
@@ -43,17 +42,13 @@ export default defineConfig(({ mode }) => {
         configureServer(server) {
           server.middlewares.use(async (req, res, next) => {
             const pathname = req.url?.split('?')[0];
-            const apiHandlers = {
-              '/api/chat': chatHandler
-            };
-            const handler = apiHandlers[pathname];
-
-            if (!handler) {
+            if (pathname !== '/api/chat') {
               return next();
             }
 
             addResponseHelpers(res);
             readJsonBody(req, async () => {
+              const { default: handler } = await import('./api/chat.js');
               await handler(req, res);
             });
           });

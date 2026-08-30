@@ -7,8 +7,8 @@ const WINDOW_MS = 60 * 1000; // 1 minute window
 const MAX_REQUESTS_PER_WINDOW = 15; // 15 requests per minute limit
 const MIN_INTERVAL_MS = 800; // Minimum 800ms between requests from same client
 
-// Cleanup stale records periodically
-setInterval(() => {
+// Cleanup stale records periodically without keeping Node builds/functions alive.
+const cleanupInterval = setInterval(() => {
   const now = Date.now();
   for (const [ip, record] of requestLog.entries()) {
     if (now - record.lastReset > WINDOW_MS * 2) {
@@ -16,6 +16,8 @@ setInterval(() => {
     }
   }
 }, 5 * 60 * 1000);
+
+cleanupInterval.unref?.();
 
 export function checkRateLimit(clientIp) {
   const ip = clientIp || 'unknown-client';
