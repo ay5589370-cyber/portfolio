@@ -58,7 +58,7 @@ export default function Navbar({ onOpenChat }) {
         className="font-display-xl-mobile md:font-display-xl !text-[22px] md:!text-[26px] font-bold text-on-surface hover:text-primary transition-colors"
         href="#home"
       >
-        Amit Yadav
+        Amit Kumar Yadav
       </a>
 
       {/* Desktop Links */}

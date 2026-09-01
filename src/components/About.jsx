@@ -19,7 +19,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] gap-4 sm:gap-6 items-start">
             <div className="flex flex-col gap-4 sm:gap-5">
               <p className="text-on-surface leading-relaxed text-sm sm:text-base md:text-lg">
-                I'm <strong className="text-primary">Amit Yadav</strong>, a Computer Science undergraduate focused on building modern web applications that combine <strong className="text-primary">clean design, solid engineering, and AI</strong>.
+                I'm <strong className="text-primary">Amit Kumar Yadav</strong>, a Computer Science undergraduate focused on building modern web applications that combine <strong className="text-primary">clean design, solid engineering, and AI</strong>.
               </p>
               <p className="text-on-surface-variant leading-relaxed text-sm md:text-base">
                 I work with <strong className="text-secondary">React, Node.js, serverless APIs, and AI integrations</strong>, with a focus on writing maintainable code and creating experiences that are simple, fast, and useful.

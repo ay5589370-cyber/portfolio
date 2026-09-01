@@ -19,14 +19,14 @@ export default function Hero({ onOpenChat }) {
           </div>
 
           <h1 className="font-display-xl-mobile md:font-display-xl text-[1.35rem] min-[390px]:text-[1.55rem] min-[430px]:text-[1.95rem] sm:text-4xl lg:text-5xl font-bold leading-[0.98] sm:leading-[1.04] text-on-surface max-w-4xl">
-            <span className="text-on-surface">Code.</span>{' '}
-            <span className="text-primary">Create.</span>{' '}
-            <span className="text-secondary">Innovate.</span>
+            <span className="text-on-surface">Amit</span>{' '}
+            <span className="text-primary">Kumar</span>{' '}
+            <span className="text-secondary">Yadav</span>
           </h1>
 
           <div className="max-w-2xl border-l-2 border-secondary/70 pl-2.5 sm:pl-4">
             <p className="font-body-lg text-on-surface-variant leading-[1.28] sm:leading-relaxed text-[11px] min-[390px]:text-xs min-[430px]:text-sm sm:text-lg">
-              I'm <span className="text-primary font-semibold">Amit Yadav</span>, a Full-Stack Developer building responsive web experiences, AI-powered tools, and practical software products with <span className="text-secondary font-semibold">React, Node.js, and modern AI APIs</span>.
+              I'm <span className="text-primary font-semibold">Amit Kumar Yadav</span>, a Full-Stack Developer building responsive web experiences, AI-powered tools, and practical software products with <span className="text-secondary font-semibold">React, Node.js, and modern AI APIs</span>.
             </p>
           </div>
 
