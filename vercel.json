@@ -6,7 +6,7 @@
       "destination": "/api/chat.js"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/|sitemap\\.xml|robots\\.txt|assets/).*)",
       "destination": "/index.html"
     }
   ]
