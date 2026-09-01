@@ -1,4 +1,4 @@
-# Amit Yadav — Production-Ready AI Developer Portfolio
+# Amit Kumar — Production-Ready AI Developer Portfolio
 
 An interactive, high-performance developer portfolio featuring **Ask Amit AI** and a working EmailJS contact form.
 

@@ -1,6 +1,6 @@
 export const portfolioData = {
   personalInfo: {
-    name: "Amit Kumar Yadav",
+    name: "Amit Kumar",
     title: "Full-Stack Developer focused on AI-powered web products",
     bio: "Computer Science undergraduate building practical AI-enabled web applications with React, Node.js, serverless APIs, and clean product interfaces. I care about dependable architecture, readable code, and experiences that feel fast and easy to use.",
     location: "Punjab, India",
@@ -100,7 +100,7 @@ export const portfolioData = {
   ]
 };
 
-export const PORTFOLIO_SYSTEM_PROMPT = `You are Amit Kumar Yadav's personal portfolio assistant named "Ask Amit AI".
+export const PORTFOLIO_SYSTEM_PROMPT = `You are Amit Kumar's personal portfolio assistant named "Ask Amit AI".
 Answer questions about Amit using ONLY the information supplied in the portfolio context below.
 Never invent experience, companies, certifications, awards, statistics, contact information, or achievements.
 If information is unavailable in this prompt context, politely reply:
